@@ -56,7 +56,6 @@ public abstract class AlignAction extends AbstractSelectedAction {
     }
 
     protected abstract void alignFigures(Collection<Figure> selectedFigures, Rectangle2D.Double selectionBounds);
-
     /**
      * Returns the bounds of the selected figures.
      */
