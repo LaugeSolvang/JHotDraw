@@ -19,6 +19,7 @@ import org.jhotdraw.util.ResourceBundleUtil;
  * Aligns the selected figures.
  * XXX - Fire edit events
  *
+ *
  * @author Werner Randelshofer
  * @version $Id$
  */
