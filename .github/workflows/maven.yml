@@ -26,7 +26,3 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots -Dmaven.test.skip=true verify
-      - name: Deploy to GitHub Packages
-        run: mvn --batch-mode -X deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
