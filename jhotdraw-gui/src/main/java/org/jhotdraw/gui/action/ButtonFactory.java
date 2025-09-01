@@ -1655,17 +1655,42 @@ public class ButtonFactory {
      */
     public static void addAlignmentButtonsTo(JToolBar bar, final DrawingEditor editor, java.util.List<Disposable> dsp) {
         AbstractSelectedAction d;
-        bar.add(d = new AlignAction.West(editor)).setFocusable(false);
+        JButton button;
+
+        // West Alignment
+        button = bar.add(d = new AlignAction(editor, AlignAction.AlignmentType.WEST));
+        button.setName("alignWestButton"); // Setting name
+        button.setFocusable(false);
         dsp.add(d);
-        bar.add(d = new AlignAction.East(editor)).setFocusable(false);
+
+        // East Alignment
+        button = bar.add(d = new AlignAction(editor, AlignAction.AlignmentType.EAST));
+        button.setName("alignEastButton");
+        button.setFocusable(false);
         dsp.add(d);
-        bar.add(d = new AlignAction.Horizontal(editor)).setFocusable(false);
+
+        // Horizontal Alignment
+        button = bar.add(d = new AlignAction(editor, AlignAction.AlignmentType.HORIZONTAL));
+        button.setName("alignHorizontalButton");
+        button.setFocusable(false);
         dsp.add(d);
-        bar.add(d = new AlignAction.North(editor)).setFocusable(false);
+
+        // North Alignment
+        button = bar.add(d = new AlignAction(editor, AlignAction.AlignmentType.NORTH));
+        button.setName("alignNorthButton");
+        button.setFocusable(false);
         dsp.add(d);
-        bar.add(d = new AlignAction.South(editor)).setFocusable(false);
+
+        // South Alignment
+        button = bar.add(d = new AlignAction(editor, AlignAction.AlignmentType.SOUTH));
+        button.setName("alignSouthButton");
+        button.setFocusable(false);
         dsp.add(d);
-        bar.add(d = new AlignAction.Vertical(editor)).setFocusable(false);
+
+        // Vertical Alignment
+        button = bar.add(d = new AlignAction(editor, AlignAction.AlignmentType.VERTICAL));
+        button.setName("alignVerticalButton");
+        button.setFocusable(false);
         dsp.add(d);
         bar.addSeparator();
         bar.add(d = new MoveAction.West(editor)).setFocusable(false);
