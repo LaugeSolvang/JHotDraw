@@ -13,7 +13,7 @@
                 <repository>
                     <name>GitHub External Packages</name>
                     <id>github</id>
-                    <url>https://maven.pkg.github.com/sweat-tek/MavenRepository</url>
+                    <url>https://maven.pkg.github.com/LaugeSolvang/JHotDraw</url>
                 </repository>
                 <repository>
                     <id>central</id>
