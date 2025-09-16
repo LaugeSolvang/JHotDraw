@@ -50,6 +50,7 @@ public class GroupAction extends AbstractSelectedAction {
         ResourceBundleUtil labels
                 = ResourceBundleUtil.getBundle("org.jhotdraw.draw.Labels");
         labels.configureAction(this, ID);
+        //Here
         updateEnabledState();
     }
 
